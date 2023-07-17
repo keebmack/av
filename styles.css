@@ -26,24 +26,6 @@
     padding: 20px;
 }
 
-.bullet-inline {
-    list-style-type: none;
-    padding: 0;
-}
-
-.bullet-inline li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.bullet-inline li::before {
-    content: '\2022'; /* Unicode bullet point character */
-    color: yellow;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
 .content h1, .content p, .content ul, .content table {
     margin-bottom: 20px;
 }
