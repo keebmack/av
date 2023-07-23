@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fall 23 Classes - Ryan Kebe</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <div id="classes-section">
+        <h1>Fall 23 classes</h1>
+        <select id="class-dropdown">
+            <option value="">Select a class</option>
+            <option value="bmgt-280">BMGT 280</option>
+            <option value="bmgt-340">BMGT 340</option>
+            <option value="cmps-260">CMPS 260</option>
+        </select>
+    </div>
+    <script src="js/jquery-3.3.1.min_.js"></script>
+    <script>
+        $('#class-dropdown').on('change', function() {
+            alert('You selected: ' + this.value);
+        });
+    </script>
+</body>
+</html>
