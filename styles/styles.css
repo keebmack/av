@@ -30,6 +30,12 @@
     margin-bottom: 20px;
 }
 
+.bullet-point::before {
+    content: "• "; 
+    color: yellow; 
+    font-size: 1.5em; 
+}
+
 * {
     color: yellow;
     background-color: black;
