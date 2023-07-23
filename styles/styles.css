@@ -30,6 +30,10 @@
     margin-bottom: 20px;
 }
 
+.bullet-point {
+    list-style-type: none;
+}
+
 .bullet-point li::before {
     content: "• "; 
     color: yellow; 
