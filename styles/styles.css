@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 }
 
-.bullet-point::before {
+.bullet-point li::before {
     content: "• "; 
     color: yellow; 
     font-size: 1.5em; 
