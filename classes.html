@@ -1,3 +1,4 @@
+Copy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +14,17 @@
             <option value="bmgt-340">BMGT 340</option>
             <option value="cmps-260">CMPS 260</option>
         </select>
+        <p id="class-info"></p>
     </div>
     <script src="js/jquery-3.3.1.min_.js"></script>
     <script>
         $('#class-dropdown').on('change', function() {
-            alert('You selected: ' + this.value);
+            var selectedClass = this.value;
+            if(selectedClass) {
+                $('#class-info').text('Class Details for ' + selectedClass + ' TBD - Check back in Fall');
+            } else {
+                $('#class-info').text('');
+            }
         });
     </script>
 </body>
