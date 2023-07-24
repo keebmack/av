@@ -40,6 +40,16 @@
     font-size: 1.5em; 
 }
 
+@keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animateImage {
+    animation: clickAnimation 10s;
+}
+
 * {
     color: yellow;
     background-color: black;
