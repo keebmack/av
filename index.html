@@ -68,7 +68,7 @@
                 var selectedFont = $("input[name='font']:checked").val();
                 var selectedColor = $("#color").val().toLowerCase();
                 $('body').css('font-family', selectedFont);
-                $('body').css('color', selectedColor);
+                $('body').css('color', selectedColor + ' !important');
             });
         });
     </script>
