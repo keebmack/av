@@ -51,12 +51,12 @@
     <script>
         $(document).ready(function(){
             $('a').on('click', function(event) {
-            if (this.hash !== "") {
+                if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
 
-                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
                     }, 800, function(){
                         window.location.hash = hash;
                     });
@@ -66,7 +66,7 @@
 
             $('#applyChanges').click(function() {
                 var selectedFont = $("input[name='font']:checked").val();
-                var selectedColor = $("#fontColor").val().toLowerCase();
+                var selectedColor = $("#color").val().toLowerCase();
                 $('body').css('font-family', selectedFont);
                 $('body').css('color', selectedColor);
             });
