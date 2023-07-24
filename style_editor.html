@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style Editor - Ryan Kebe</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <div id="style-section">
+        <h1>Change Style</h1>
+        <form id="style-form">
+            <fieldset>
+                <legend>Font Type</legend>
+                <input type="radio" id="arial" name="fontType" value="Arial">
+                <label for="arial">Arial</label><br>
+                <input type="radio" id="times" name="fontType" value="Times New Roman">
+                <label for="times">Times New Roman</label><br>
+                <input type="radio" id="courier" name="fontType" value="Courier New">
+                <label for="courier">Courier New</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Font Color</legend>
+                <select id="fontColor">
+                    <option value="">Default</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </fieldset>
+            <button type="button" id="applyChanges">Apply Changes</button>
+        </form>
+    </div>
+    <script src="js/jquery-3.3.1.min_.js"></script>
+    <script>
+        $('#applyChanges').on('click', function() {
+            var selectedFont = $('input[name="fontType"]:checked').val();
+            var selectedColor = $('#fontColor').val();
+            $('body').css('font-family', selectedFont);
+            $('body').css('color', selectedColor);
+        });
+    </script>
+</body>
+</html>
