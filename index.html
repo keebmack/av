@@ -39,9 +39,9 @@
 
             <label for="color">Color:</label>
             <select id="color">
-                <option value="black">Black</option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
+                <option value="Black">Black</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
             </select>
             <button type="button" id="applyChanges">Apply Changes</button>
         </form>
@@ -67,7 +67,7 @@
                 var selectedFont = $("input[name='font']:checked").val();
                 var selectedColor = $("#color").val();
                 $('body').css('font-family', selectedFont);
-                $('body').css('color', selectedColor);
+                $('body').css('color', selectedColor + ' !important');
             });
         });
     </script>
