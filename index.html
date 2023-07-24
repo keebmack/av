@@ -60,8 +60,10 @@
                     }, 800, function(){
                         window.location.hash = hash;
                     });
+
+                    return false;
+                    
                 }
-                return false;
             });
 
             $('#applyChanges').click(function() {
