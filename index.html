@@ -11,7 +11,7 @@
         <a href="interests.html">Interests</a>
         <a href="classes.html">Classes</a>
         <a href="apex_legends.html">Apex Legends</a>
-        <a href="style_editor.html">Style Editor</a>
+        <a href="#style-editor">Style Editor</a>
     </div>
 
     <div id="intro-section">
@@ -65,9 +65,9 @@
 
             $('#applyChanges').click(function() {
                 var selectedFont = $("input[name='font']:checked").val();
-                var selectedColor = $("#color").val().toLowerCase();
+                var selectedColor = $("#fontColor").val().toLowerCase();
                 $('body').css('font-family', selectedFont);
-                $('body').css("cssText", "color: " + selectedColor + " !important;");
+                $('body').css('color', selectedColor);
             });
         });
     </script>
